@@ -14,6 +14,11 @@ export default function Signup() {
         <Form className={`${classes.login}`}>
           <TextInput
             type="text"
+            placeholder="Enter username"
+            icon="alternate_email"
+          />
+          <TextInput
+            type="text"
             placeholder="Enter email"
             icon="alternate_email"
           />
