@@ -1,14 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "../styles/Account.module.css";
 const Accounts = () => {
   return (
     <div>
       <div className={classes.account}>
-        <span class="material-icons-outlined" title="Account">
+        <span className="material-icons-outlined" title="Account">
           account_circle
         </span>
-        <a href="signup.html">Signup</a>
-        {/* <span class="material-icons-outlined" title="Logout"> logout </span> */}
+        <Link to="/signup">Signup</Link>
+        <Link to="/login">Login</Link>
+        {/* <span className="material-icons-outlined" title="Logout"> logout </span> */}
       </div>
     </div>
   );
