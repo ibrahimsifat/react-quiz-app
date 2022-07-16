@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../assets/images/logo-bg.png";
-import Accounts from "./Accounts";
-import classes from "./Styles/Nav.module.css";
+import classes from "../styles/Nav.module.css";
+import Account from "./Accounts";
 const Nav = () => {
   return (
     <nav className={classes.nav}>
@@ -13,7 +13,7 @@ const Nav = () => {
           </a>
         </li>
       </ul>
-      <Accounts />
+      <Account />
     </nav>
   );
 };

@@ -1,10 +1,13 @@
-import "../Components/Styles/App.css";
+import "../styles/App.css";
+import Layout from "./Layout";
+import Login from "./pages/Login";
 function App() {
   return (
-    <div>
-      <h1>this is hading</h1>
-      <h2>hello this is Bangladesh</h2>
-    </div>
+    <Layout>
+      {/* <Home /> */}
+      {/* <Signup /> */}
+      <Login />
+    </Layout>
   );
 }
 
