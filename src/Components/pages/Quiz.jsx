@@ -80,12 +80,12 @@ export default function Quiz() {
       [quizId]: qna,
     });
 
-    navigate({
-      pathname: `/result/${quizId}`,
-      state: {
-        qna,
-      },
-    });
+    // navigate(`/result/${quizId}`, {
+    //   state: {
+    //     qna,
+    //   },
+    // });
+    navigate(`/result/${quizId}`, { state: { qna } });
   }
 
   // calculate percentage of progress
@@ -101,10 +101,12 @@ export default function Quiz() {
           <h1>{qna[currentQuestion].title}</h1>
           <h4>Question can have multiple answers</h4>
           <Answers
+            input
             options={qna[currentQuestion].options}
             handleChange={handleAnswerChange}
           />
           <ProgressBar
+            input
             next={nextQuestion}
             prev={prevQuestion}
             submit={submit}
